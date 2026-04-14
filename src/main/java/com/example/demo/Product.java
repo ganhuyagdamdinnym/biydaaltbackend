@@ -14,6 +14,7 @@ public class Product {
     private String status;
     private String category;
     private String brand;
+    
 
     // Хоосон конструктор
     public Product() {
