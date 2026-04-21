@@ -14,7 +14,8 @@ public class Product {
     private String status;
     private String category;
     private String brand;
-    
+    private Number price;
+    private Number balance;
 
     // Хоосон конструктор
     public Product() {
@@ -67,5 +68,13 @@ public class Product {
 
     public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public Number getPrice() {
+        return price;
+    }
+
+    public void setPrice(Number price) {
+        this.price = price;
     }
 }

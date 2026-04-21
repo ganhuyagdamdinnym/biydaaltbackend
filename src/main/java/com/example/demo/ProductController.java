@@ -14,14 +14,14 @@ public class ProductController {
 
     @PostMapping("/add")
     public Product createProduct(@RequestBody Product product) {
-        System.out.println("Creating product: " + product.getTitle());
+        System.out.println("Creating product and check price: " + product.getPrice());
         return productRepository.save(product);
     }
 
     @GetMapping("/getAll")
     public List<Product> getAllProducts() {
         List<Product> products = (List<Product>) productRepository.findAll();
-        System.out.println("Баазаас ирсэн барааны тоо: " + products.size());
+        System.out.println("Total products: " + products.size());
         return products;
     }
 
